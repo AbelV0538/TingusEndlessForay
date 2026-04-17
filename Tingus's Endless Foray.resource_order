@@ -1,0 +1,23 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Rooms","order":1,"path":"folders/Rooms.yy",},
+    {"name":"Sprites","order":2,"path":"folders/Sprites.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_bullet_enemy_basic","order":6,"path":"objects/obj_bullet_enemy_basic/obj_bullet_enemy_basic.yy",},
+    {"name":"obj_bullet_player","order":3,"path":"objects/obj_bullet_player/obj_bullet_player.yy",},
+    {"name":"obj_coin","order":5,"path":"objects/obj_coin/obj_coin.yy",},
+    {"name":"obj_controller","order":1,"path":"objects/obj_controller/obj_controller.yy",},
+    {"name":"obj_enemy_goon","order":4,"path":"objects/obj_enemy_goon/obj_enemy_goon.yy",},
+    {"name":"obj_viewport_focus","order":7,"path":"objects/obj_viewport_focus/obj_viewport_focus.yy",},
+    {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"F1","order":2,"path":"rooms/F1/F1.yy",},
+    {"name":"PrepShopRoom","order":3,"path":"rooms/PrepShopRoom/PrepShopRoom.yy",},
+    {"name":"Tutorial","order":1,"path":"rooms/Tutorial/Tutorial.yy",},
+    {"name":"spr_bullet_enemy","order":2,"path":"sprites/spr_bullet_enemy/spr_bullet_enemy.yy",},
+    {"name":"spr_bullet_player","order":1,"path":"sprites/spr_bullet_player/spr_bullet_player.yy",},
+    {"name":"spr_coin","order":3,"path":"sprites/spr_coin/spr_coin.yy",},
+    {"name":"spr_enemy_goon","order":4,"path":"sprites/spr_enemy_goon/spr_enemy_goon.yy",},
+    {"name":"spr_wall","order":5,"path":"sprites/spr_wall/spr_wall.yy",},
+  ],
+}
