@@ -1,2 +1,1 @@
-interval = 10;
-canSpawn = true;
+can_spawn = true;

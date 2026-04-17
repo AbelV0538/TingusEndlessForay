@@ -25,3 +25,4 @@ if (_fire_input && can_shoot) {
     can_shoot = false;
     alarm[0] = fire_rate;
 }
+
