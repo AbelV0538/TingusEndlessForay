@@ -20,6 +20,7 @@
     {"name":"F1","order":2,"path":"rooms/F1/F1.yy",},
     {"name":"F2","order":4,"path":"rooms/F2/F2.yy",},
     {"name":"F3_Boss","order":5,"path":"rooms/F3_Boss/F3_Boss.yy",},
+    {"name":"UpgradeShopRoom","order":6,"path":"rooms/UpgradeShopRoom/UpgradeShopRoom.yy",},
     {"name":"spr_boss_1_hurt","order":13,"path":"sprites/spr_boss_1_hurt/spr_boss_1_hurt.yy",},
     {"name":"spr_boss_1","order":12,"path":"sprites/spr_boss_1/spr_boss_1.yy",},
     {"name":"spr_boss_barrier","order":11,"path":"sprites/spr_boss_barrier/spr_boss_barrier.yy",},

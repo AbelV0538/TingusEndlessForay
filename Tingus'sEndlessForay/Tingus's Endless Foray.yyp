@@ -19,7 +19,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.3.970",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Tingus's Endless Foray",
   "resources":[
@@ -40,6 +40,7 @@
     {"id":{"name":"F1","path":"rooms/F1/F1.yy",},},
     {"id":{"name":"F2","path":"rooms/F2/F2.yy",},},
     {"id":{"name":"F3_Boss","path":"rooms/F3_Boss/F3_Boss.yy",},},
+    {"id":{"name":"UpgradeShopRoom","path":"rooms/UpgradeShopRoom/UpgradeShopRoom.yy",},},
     {"id":{"name":"spr_boss_1_hurt","path":"sprites/spr_boss_1_hurt/spr_boss_1_hurt.yy",},},
     {"id":{"name":"spr_boss_1","path":"sprites/spr_boss_1/spr_boss_1.yy",},},
     {"id":{"name":"spr_boss_barrier","path":"sprites/spr_boss_barrier/spr_boss_barrier.yy",},},
@@ -63,6 +64,7 @@
     {"roomId":{"name":"F1","path":"rooms/F1/F1.yy",},},
     {"roomId":{"name":"F2","path":"rooms/F2/F2.yy",},},
     {"roomId":{"name":"F3_Boss","path":"rooms/F3_Boss/F3_Boss.yy",},},
+    {"roomId":{"name":"UpgradeShopRoom","path":"rooms/UpgradeShopRoom/UpgradeShopRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
