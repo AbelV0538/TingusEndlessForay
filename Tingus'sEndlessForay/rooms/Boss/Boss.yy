@@ -13,8 +13,8 @@
   ],
   "name":"Boss",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Tingus'sEndlessForay",
+    "path":"Tingus'sEndlessForay.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
