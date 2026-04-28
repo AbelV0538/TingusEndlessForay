@@ -51,3 +51,12 @@ if keyboard_check(vk_enter) && canShoot {
 	    alarm[0] = 30; // fallback so the game doesn't crash
 	}
 }
+var gc = instance_find(obj_controller, 0);
+if (gc != noone) {
+    if (gc.invulnerable) {
+        gc.invuln_time -= 1;
+        if (gc.invuln_time <= 0) {
+            gc.invulnerable = false;
+        }
+    }
+}

@@ -17,3 +17,12 @@ if (keyboard_check_pressed(ord("E"))) {
         audio_play_sound(snd_error, 1, false); // optional sound
     }
 }
+// Prevent respawn logic from firing in the shop
+var gc = instance_find(obj_controller, 0);
+if (gc != noone) {
+    gc.invulnerable = true;
+}
+if (keyboard_check_pressed(vk_escape)) {
+    room_goto(rm_GameplayRoom); // replace with your actual gameplay room
+}
+

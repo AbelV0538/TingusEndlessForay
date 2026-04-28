@@ -1,4 +1,6 @@
 // Destroy the bullet first (or after applying damage)
+if (other.destroyed_flag) exit;
+other.destroyed_flag = true;
 instance_destroy(other);
 
 // Amount of damage (example)
@@ -21,6 +23,8 @@ if (!variable_instance_exists(gc, "invulnerable")) gc.invulnerable = false;
 // Apply damage
 if (!gc.invulnerable) {
     gc.health -= dmg;
+	gc.invulnerable = true;
+	gc.invuln_time = 30;
     if (gc.health <= 0) {
         gc.health = 0;
         // Go to upgrade shop safely if respawn_room exists

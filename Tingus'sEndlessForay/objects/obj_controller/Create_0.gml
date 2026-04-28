@@ -29,3 +29,7 @@ cost_health_upgrade = 100;
 cost_damage_upgrade = 75;
 cost_speed_upgrade = 60;
 
+invulnerable = false;
+invuln_time = 30; // 0.5 seconds at 60fps
+
+
