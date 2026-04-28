@@ -21,10 +21,17 @@ if keyboard_check_pressed(ord("N")) {
 
 //Alt + C: Add 100 coins
 if keyboard_check_pressed(ord("C")) {
-	global.coins += 100
+	var gc = instance_find(obj_controller, 0);
+	if (gc != noone) {
+	    gc.coins += 100
+	}
+
 }
 
 //Alt + H: Replenish to maximum health
 if keyboard_check_pressed(ord("H")) {
-	global.health = 100 + (25 * global.upgrade_max_health)
+	var gc = instance_find(obj_controller, 0);
+	if (gc != noone) {
+	    gc.health = 100 + (25 * gc.upgrade_max_health_level)
+	}
 }

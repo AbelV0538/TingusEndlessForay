@@ -1,12 +1,10 @@
-// Define shop items and display order
-items = [
-    { id: "medkit", name: "Medkit", cost: 50, desc: "Heal to full" },
-    { id: "health_upgrade", name: "Max Health +25", cost: 100, desc: "Permanent max HP" },
-    { id: "damage_upgrade", name: "Damage Up", cost: 75, desc: "Increase damage" },
-    { id: "speed_upgrade", name: "Speed Up", cost: 60, desc: "Increase speed" }
+shop_items = [
+    { id: "medkit",          name: "Medkit",          cost: 50,  desc: "Heal to full" },
+    { id: "health_upgrade",  name: "Max Health +25",  cost: 100, desc: "Permanent HP" },
+    { id: "damage_upgrade",  name: "Damage Up",       cost: 75,  desc: "Increase damage" },
+    { id: "speed_upgrade",   name: "Speed Up",        cost: 60,  desc: "Increase speed" }
 ];
 
-// UI state
 selected_index = 0;
 ui_x = 64;
 ui_y = 64;
