@@ -4,6 +4,9 @@ if (gc == noone) {
 }
 if (gc != noone) {
     if (!variable_instance_exists(gc, "health")) gc.health = 0;
-    gc.health += 30;
+		gc.health += 30;
+		if(gc.health > gc.maxHealth){
+			gc.health = gc.maxHealth;
+		}
 }
 instance_destroy(); // destroy the medkit instance
