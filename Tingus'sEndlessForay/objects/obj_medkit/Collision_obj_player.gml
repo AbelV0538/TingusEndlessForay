@@ -3,7 +3,7 @@ if (gc == noone) {
     gc = instance_create_layer(0, 0, "Instances", obj_controller);
 }
 if (gc != noone) {
-    if (!variable_instance_exists(gc, "coins")) gc.coins = 0;
-    gc.coins += 1;
+    if (!variable_instance_exists(gc, "health")) gc.health = 0;
+    gc.health += 30;
 }
-instance_destroy(); // destroy the coin instance
+instance_destroy(); // destroy the medkit instance

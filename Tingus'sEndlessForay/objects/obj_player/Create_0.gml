@@ -3,9 +3,14 @@ if (instance_number(obj_controller) == 0) {
     // Use a layer name that exists in your rooms (commonly "Instances")
     instance_create_layer(0, 0, "Instances", obj_controller);
 }
+// Aim / reticle
+aim_angle    = 0;
+reticle_dist = 64;
+reticle_size = 6;
 
-// Local flags
+// Shooting
 canShoot = true;
+bullet_speed = 12; // tune this
 
 // Optional: cache controller id for faster access (update if controller can be recreated)
 gc_id = instance_find(obj_controller, 0);

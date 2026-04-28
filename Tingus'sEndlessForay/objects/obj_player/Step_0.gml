@@ -41,16 +41,28 @@ if keyboard_check(ord("A")) and keyboard_check(ord("D")) {
 	hspeed = 0
 }
 
-if keyboard_check(vk_enter) && canShoot {
-	instance_create_layer(x,y+8,"Instances",obj_bullet_player)
-	canShoot = false
-	var gc = instance_find(obj_controller, 0);
-	if (gc != noone) {
-	    alarm[0] = 30 - (5 * gc.upgrade_gun_reload_time);
-	} else {
-	    alarm[0] = 30; // fallback so the game doesn't crash
-	}
+// Aim at mouse (room coordinates)
+aim_angle = point_direction(x, y, mouse_x, mouse_y);
+
+// Fire (Enter)
+if mouse_check_button(mb_left) && canShoot {
+    // create bullet and set its direction/speed
+    var b = instance_create_layer(x, y + 8, "Instances", obj_bullet_player);
+    if (b != noone) {
+        b.direction = aim_angle;
+        b.speed = bullet_speed;
+        b.image_angle = aim_angle;
+    }
+
+    canShoot = false;
+    var gc = instance_find(obj_controller, 0);
+    if (gc != noone) {
+        alarm[0] = max(1, 30 - (5 * gc.upgrade_gun_reload_time));
+    } else {
+        alarm[0] = 30;
+    }
 }
+//invulnerability timer to prevent constant hits
 var gc = instance_find(obj_controller, 0);
 if (gc != noone) {
     if (gc.invulnerable) {

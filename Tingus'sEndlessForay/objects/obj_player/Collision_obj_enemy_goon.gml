@@ -7,7 +7,7 @@ var gc = instance_find(obj_controller, 0);
 if (gc == noone) exit;
 if (variable_instance_exists(gc, "invulnerable") && gc.invulnerable) exit;
 
-var dmg = 10;
+var dmg = 25;
 if (!variable_instance_exists(gc, "health")) {
     // controller exists but health missing — initialize safely
     gc.health = 100; // or gc.maxHealth if you prefer

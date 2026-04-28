@@ -22,7 +22,8 @@ var gc = instance_find(obj_controller, 0);
 if (gc != noone) {
     gc.invulnerable = true;
 }
+//return to F1
 if (keyboard_check_pressed(vk_escape)) {
-    room_goto(rm_GameplayRoom); // replace with your actual gameplay room
+    room_goto(F1);
 }
 

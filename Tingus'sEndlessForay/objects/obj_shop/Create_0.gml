@@ -1,6 +1,5 @@
 shop_items = [
-    { id: "medkit",          name: "Medkit",          cost: 50,  desc: "Heal to full" },
-    { id: "health_upgrade",  name: "Max Health +25",  cost: 100, desc: "Permanent HP" },
+    { id: "health_upgrade",  name: "Max Health +25",  cost: 100, desc: "Increase health" },
     { id: "damage_upgrade",  name: "Damage Up",       cost: 75,  desc: "Increase damage" },
     { id: "speed_upgrade",   name: "Speed Up",        cost: 60,  desc: "Increase speed" }
 ];

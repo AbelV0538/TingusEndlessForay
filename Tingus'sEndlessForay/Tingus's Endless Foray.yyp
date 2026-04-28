@@ -31,6 +31,7 @@
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_enemy_goon","path":"objects/obj_enemy_goon/obj_enemy_goon.yy",},},
     {"id":{"name":"obj_enemy_strafer","path":"objects/obj_enemy_strafer/obj_enemy_strafer.yy",},},
+    {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_medkit","path":"objects/obj_medkit/obj_medkit.yy",},},
     {"id":{"name":"obj_placeholder_ending","path":"objects/obj_placeholder_ending/obj_placeholder_ending.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

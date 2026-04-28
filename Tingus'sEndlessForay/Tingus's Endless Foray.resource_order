@@ -12,6 +12,7 @@
     {"name":"obj_controller","order":1,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"obj_enemy_goon","order":4,"path":"objects/obj_enemy_goon/obj_enemy_goon.yy",},
     {"name":"obj_enemy_strafer","order":10,"path":"objects/obj_enemy_strafer/obj_enemy_strafer.yy",},
+    {"name":"obj_hud","order":15,"path":"objects/obj_hud/obj_hud.yy",},
     {"name":"obj_medkit","order":11,"path":"objects/obj_medkit/obj_medkit.yy",},
     {"name":"obj_placeholder_ending","order":9,"path":"objects/obj_placeholder_ending/obj_placeholder_ending.yy",},
     {"name":"obj_room_advance","order":8,"path":"objects/obj_room_advance/obj_room_advance.yy",},
