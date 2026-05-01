@@ -12,9 +12,12 @@ if (!variable_instance_exists(gc, "health")) {
     // controller exists but health missing — initialize safely
     gc.health = 100; // or gc.maxHealth if you prefer
 }
+audio_play_sound(snd_player_hurt, 1, false);
 gc.health -= dmg;
 if (gc.health <= 0) {
+	audio_play_sound(snd_player_kill, 1, false);
     gc.health = 0;
-    // go to shop safely (do not 'with' gc if gc might be noone)
-    room_goto(gc.respawn_room);
+	window_set_cursor(cr_default);
+    room_goto(rm_death);
+    exit;
 }

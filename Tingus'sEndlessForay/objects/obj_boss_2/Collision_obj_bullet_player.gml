@@ -2,6 +2,7 @@ instance_destroy(other)
 
 if iframes == false {
 	
+	audio_play_sound(snd_enemy_boss_hurt, 1, false);
 	boss_health -= 10
 	
 	if boss_health > 0 {
@@ -45,6 +46,7 @@ if iframes == false {
 	instance_create_layer(x,y,"Instances",obj_medkit)
 	
 	instance_destroy(obj_boss_barrier)
+	audio_play_sound(snd_enemy_boss_kill, 1, false);
 	instance_destroy(self)
 	
 	}

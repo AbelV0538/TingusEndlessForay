@@ -1,3 +1,9 @@
+if (instance_exists(obj_controller) && obj_controller.paused) {
+    hspeed = 0;
+    vspeed = 0;
+    exit;
+}
+
 if distance_to_object(obj_player) < 350 {
 	//YES, the +90s are necessary.
 	image_angle = point_direction(x, y, obj_player.x, obj_player.y) + 90

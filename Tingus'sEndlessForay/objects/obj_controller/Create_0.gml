@@ -1,3 +1,11 @@
+paused = false;
+pause_option = 0;
+
+death_screen = false;
+death_option = 0;
+
+end_option = 0;
+
 if (instance_number(obj_controller) > 1) {
     instance_destroy();
     exit;
