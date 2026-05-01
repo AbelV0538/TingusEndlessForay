@@ -6,7 +6,11 @@ if (instance_number(obj_controller) == 0) {
 // Aim / reticle
 aim_angle    = 0;
 reticle_dist = 64;
-reticle_size = 6;
+reticle_size = 12;
+
+// hide system cursor while playing
+cursor_sprite = spr_reticle;
+window_set_cursor(cr_none);
 
 // Shooting
 canShoot = true;

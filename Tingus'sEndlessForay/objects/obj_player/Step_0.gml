@@ -1,3 +1,8 @@
+if (instance_exists(obj_controller) && obj_controller.paused) {
+    hspeed = 0;
+    vspeed = 0;
+    exit;
+}
 
 if place_meeting(x , y - sprite_height/4, obj_wall) or place_meeting(x , y - sprite_height/4, obj_boss_barrier)  {
 	vspeed = 0
@@ -44,6 +49,7 @@ if keyboard_check(ord("A")) and keyboard_check(ord("D")) {
 // Aim at mouse (room coordinates)
 aim_angle = point_direction(x, y, mouse_x, mouse_y);
 
+
 // Fire (Enter)
 if mouse_check_button(mb_left) && canShoot {
     // create bullet and set its direction/speed
@@ -55,12 +61,13 @@ if mouse_check_button(mb_left) && canShoot {
     }
 
     canShoot = false;
-    var gc = instance_find(obj_controller, 0);
-    if (gc != noone) {
-        alarm[0] = max(1, 30 - (5 * gc.upgrade_gun_reload_time));
-    } else {
-        alarm[0] = 30;
-    }
+    // compute reload based on controller's upgrade_gun_reload_time (levels)
+	var gc = instance_find(obj_controller, 0);
+	var base_reload = 30; // frames between shots at level 0
+	var rof_level = (gc != noone) ? gc.upgrade_gun_reload_time : 0;
+	// each level reduces reload by 4 frames, clamp to minimum 6 frames
+	var reload = max(6, base_reload - 4 * rof_level);
+	alarm[0] = reload;
 }
 //invulnerability timer to prevent constant hits
 var gc = instance_find(obj_controller, 0);
