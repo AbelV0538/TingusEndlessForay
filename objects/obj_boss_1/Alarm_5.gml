@@ -1,0 +1,1 @@
+instance_create_layer(x, y, "Instances", obj_bullet_enemy_basic)
