@@ -15,9 +15,15 @@ if (!variable_instance_exists(gc, "health")) {
 audio_play_sound(snd_player_hurt, 1, false);
 gc.health -= dmg;
 if (gc.health <= 0) {
-	audio_play_sound(snd_player_kill, 1, false);
     gc.health = 0;
-	window_set_cursor(cr_default);
-    room_goto(rm_death);
+    audio_play_sound(snd_player_kill, 1, false);
+    window_set_cursor(cr_default);
+    
+    // SAVE THE DATA
+    save_roguelike_data();
+    
+    // Instead of jumping immediately, set a flag in the controller
+    gc.is_dying = true; 
+    gc.death_timer = 5; // A tiny 5-frame delay to let things settle
     exit;
 }

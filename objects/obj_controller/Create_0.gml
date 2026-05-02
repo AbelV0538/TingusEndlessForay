@@ -8,6 +8,9 @@ pause_option = 0;
 death_screen = false;
 death_option = 0;
 
+is_dying = false;
+death_timer = 0;
+
 end_option = 0;
 
 // Only play if not already playing

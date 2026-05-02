@@ -81,3 +81,5 @@ if (gc != noone) {
 }
 
 audio_listener_position(x, y, 0);
+
+// obj_controller -> Step Event

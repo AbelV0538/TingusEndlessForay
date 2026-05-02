@@ -90,3 +90,23 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 
 
 audio_listener_orientation(0, 0, 1, 0, -1, 0);
+
+// If the window size changes (like going Fullscreen), reset the GUI and Surface
+if (window_has_focus()) {
+    var _ww = window_get_width();
+    var _wh = window_get_height();
+    if (display_get_gui_width() != _ww || display_get_gui_height() != _wh) {
+        display_set_gui_size(_ww, _wh);
+        surface_resize(application_surface, _ww, _wh);
+    }
+}
+
+if (variable_instance_exists(id, "is_dying") && is_dying) {
+    death_timer--;
+    
+    if (death_timer <= 0) {
+        is_dying = false; // Reset the flag
+        health = maxHealth; // Reset health for the next life
+        room_goto(rm_death);
+    }
+}

@@ -1,8 +1,24 @@
+// ==========================================
+// 1. DRAW THE GAME SURFACE FIRST
+// ==========================================
+if (surface_exists(application_surface)) {
+    if (variable_instance_exists(id, "is_dying") && is_dying) {
+        draw_clear(c_black); // Draw black while the room prepares to switch
+    } else {
+        shader_set(shd_crt);
+        shader_set_uniform_f(u_res, display_get_gui_width(), display_get_gui_height());
+        draw_surface_stretched(application_surface, 0, 0, display_get_gui_width(), display_get_gui_height());
+        shader_reset();
+    }
+}
+
+// ==========================================
+// 2. DRAW MENUS ON TOP OF THE GAME
+// ==========================================
 if (paused) {
     draw_set_alpha(0.7);
     draw_set_color(c_black);
     draw_rectangle(0, 0, 1920, 1080, false);
-
     draw_set_alpha(1);
     draw_set_color(c_white);
     draw_set_halign(fa_center);
@@ -24,8 +40,7 @@ if (paused) {
     draw_set_halign(fa_left);
 }
 
-if (room == rm_death)
-{
+if (room == rm_death) {
     // Darken background first
     draw_set_alpha(0.5);
     draw_set_color(c_black);
@@ -35,44 +50,16 @@ if (room == rm_death)
     // Draw stretched death screen on top
     var scale_x = 1920 / sprite_get_width(spr_death_screen);
     var scale_y = 1080 / sprite_get_height(spr_death_screen);
-
     draw_sprite_ext(spr_death_screen, 0, 0, 0, scale_x, scale_y, 0, c_white, 1);
 
     // Draw arrow on top
     draw_set_color(c_white);
-
-    if (death_option == 0)
-    {
-        draw_text(650, 550, ">");
-    }
-
-    if (death_option == 1)
-    {
-        draw_text(650, 620, ">");
-    }
+    if (death_option == 0) draw_text(650, 550, ">");
+    if (death_option == 1) draw_text(650, 620, ">");
 }
 
 if (room == Room_end) {
     draw_set_color(c_aqua);
-
-    if (end_option == 0) {
-        draw_text_transformed(430, 730, ">", 2, 2, 0);
-    }
-
-    if (end_option == 1) {
-        draw_text_transformed(280, 810, ">", 2, 2, 0);
-    }
+    if (end_option == 0) draw_text_transformed(430, 730, ">", 2, 2, 0);
+    if (end_option == 1) draw_text_transformed(280, 810, ">", 2, 2, 0);
 }
-
-// obj_controller -> Draw GUI End
-// Draw the entire game with the CRT effect
-shader_set(shd_crt);
-
-// Pass the resolution to the shader
-shader_set_uniform_f(u_res, display_get_gui_width(), display_get_gui_height());
-
-// Draw the application surface (the whole game)
-draw_surface_stretched(application_surface, 0, 0, display_get_gui_width(), display_get_gui_height());
-
-shader_reset();
-
