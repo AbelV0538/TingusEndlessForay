@@ -23,3 +23,25 @@ The upgrade levels and coins persist throughout runs. Once the final boss on flo
 A and D: Strafe left and right.
 Left-click: Shoot a bullet.
 Move mouse: Aiming the gun. A reticle will be displayed where the cursor is, showing where Tingus is aiming.
+Escape: Pause the game and go to the pause menu. Pressing escape again will resume the game.
+
+[CONTROLS - MENUS]
+W and S: Cycle between menu options.
+Enter: Select the highlighted option.
+B (On upgrade menu): Exit the upgrade shop.
+
+[CREDITS]
+Enemy and player hurt sounds: Voiced by Joseph Pollard
+Title screen and background music: https://ansimuz.itch.io/industrial-parallax-background/
+Title screen and win/lose screen font: Press Start 2P by Codeman38 (on DaFont.com)
+Gun shooting sound: https://pixabay.com/sound-effects/film-special-effects-pistol-shot-233473/
+Bullet whiz sound: https://www.youtube.com/watch?v=pRmn_dqi_XA
+
+[SECTION TO ANSWER THE PROFESSORS AND TA'S QUESTIONS]
+Q: "How did you implement the theme you chose for this game?"
+A: The theme we chose for this game was perseverance, which we believed would fit well with the mechanics of a roguelite game.
+In a roguelite game, the player must start over if they fail, however, they keep a certain amount of items (in this game's case,
+coins) and upgrades so they can still progress through each run. It takes time, dedication, and a willingness to try again after
+failure to complete Tingus's Endless Foray -- in other words, perseverance. We designed the levels to be challenging and even a
+little frustrating at times, to really bring home the point that the player has to keep trying in order to surpass the many
+challenges waiting for them in Pit Point Tower. Only through persevering despite initial failures will the player be able to win.
