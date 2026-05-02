@@ -9,6 +9,7 @@ if (keyboard_check_pressed(vk_escape)) {
         with (obj_enemy_goon) image_speed = 1;
         with (obj_player) image_speed = 1;
     }
+	save_roguelike_data()
 }
 }
 

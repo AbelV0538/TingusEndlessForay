@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_try_purchase",
+  "%Name":"scr_SaveSystem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_try_purchase",
+  "name":"scr_SaveSystem",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

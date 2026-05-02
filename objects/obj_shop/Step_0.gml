@@ -41,6 +41,7 @@ if (keyboard_check_pressed(ord("B"))) {
     if (variable_instance_exists(gc, "maxHealth")) {
         gc.health = gc.maxHealth;
     }
+	save_roguelike_data()
     room_goto(rm_F1);
 }
 

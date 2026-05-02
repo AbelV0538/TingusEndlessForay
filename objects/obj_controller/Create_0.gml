@@ -33,3 +33,10 @@ invulnerable = false;
 invuln_time   = 0;
 
 respawn_room = UpgradeShopRoom;
+
+global.best_room = 1;
+global.past_runs = [];
+
+load_roguelike_data();
+
+health = maxHealth;

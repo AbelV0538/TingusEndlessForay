@@ -16,6 +16,7 @@ function scr_try_purchase(){
 	        gc.maxHealth = 100 + 25 * gc.upgrade_max_health_level;
 	        gc.health = gc.maxHealth;
 	        gc.shop_last_purchase = "health_upgrade";
+			
 	        return true;
 
 	    case "fire_rate":

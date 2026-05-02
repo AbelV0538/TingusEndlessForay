@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_try_purchase",
+  "%Name":"scr_get_room_num",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_try_purchase",
+  "name":"scr_get_room_num",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

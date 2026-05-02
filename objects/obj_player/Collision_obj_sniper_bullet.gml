@@ -18,6 +18,11 @@ if (gc.health <= 0) {
 	audio_play_sound(snd_player_kill, 1, false);
     gc.health = 0;
 	window_set_cursor(cr_default);
+	curr_room = get_room_num();
+	if(curr_room > global.best_room){
+		global.best_room = curr_room;
+	}
+	save_roguelike_data();
     room_goto(rm_death);
     exit;
 }

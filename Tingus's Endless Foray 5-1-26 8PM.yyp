@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -68,6 +69,8 @@
     {"id":{"name":"Room_end","path":"rooms/Room_end/Room_end.yy",},},
     {"id":{"name":"Room_start","path":"rooms/Room_start/Room_start.yy",},},
     {"id":{"name":"UpgradeShopRoom","path":"rooms/UpgradeShopRoom/UpgradeShopRoom.yy",},},
+    {"id":{"name":"scr_get_room_num","path":"scripts/scr_get_room_num/scr_get_room_num.yy",},},
+    {"id":{"name":"scr_SaveSystem","path":"scripts/scr_SaveSystem/scr_SaveSystem.yy",},},
     {"id":{"name":"scr_try_purchase","path":"scripts/scr_try_purchase/scr_try_purchase.yy",},},
     {"id":{"name":"snd_bullet_whiz","path":"sounds/snd_bullet_whiz/snd_bullet_whiz.yy",},},
     {"id":{"name":"snd_enemy_boss_hurt","path":"sounds/snd_enemy_boss_hurt/snd_enemy_boss_hurt.yy",},},
