@@ -43,6 +43,7 @@ Title screen and background music: https://ansimuz.itch.io/industrial-parallax-b
 Title screen and win/lose screen font: Press Start 2P by Codeman38 (on DaFont.com)
 Gun shooting sound: https://pixabay.com/sound-effects/film-special-effects-pistol-shot-233473/
 Bullet whiz sound: https://www.youtube.com/watch?v=pRmn_dqi_XA
+Sniper sound: https://www.youtube.com/watch?v=oD9giwoXSEk
 
 [SECTION TO ANSWER THE PROFESSORS AND TA'S QUESTIONS]
 Q: "How did you implement the theme you chose for this game?"
@@ -52,3 +53,13 @@ coins) and upgrades so they can still progress through each run. It takes time, 
 failure to complete Tingus's Endless Foray -- in other words, perseverance. We designed the levels to be challenging and even a
 little frustrating at times, to really bring home the point that the player has to keep trying in order to surpass the many
 challenges waiting for them in Pit Point Tower. Only through persevering despite initial failures will the player be able to win.
+
+[GRADUATE REQUIREMENTS FULFILLED]
+Spatial Sound: The player can hear where their enemies bullets are comming from and can hear them "whiz" past them.
+Data Persistance: Json file written into with a script to save a player's current upgrades and furthest room achieved
+Viewport: The player is limited to view a square of the much larger scroll that each room is.
+Tutorial: Accessible from start menu by clicking TAB. Simply goes over controls.
+Inheritance: Enemy classes inherit from each other. goon->strafer->Boss1->Boss2. goon->sniper (-> : "inherits")
+Shader: Applies a retro effect to the scrren, makes it look like a CRT tv. Somewhat warps the player's perspective, making some shots and enemy spawns harder to see coming.
+Smart NPCs: All enemies know exactly where the player is at all times and act accordinginly
+
