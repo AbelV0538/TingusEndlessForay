@@ -30,6 +30,13 @@ W and S: Cycle between menu options.
 Enter: Select the highlighted option.
 B (On upgrade menu): Exit the upgrade shop.
 
+[CHEAT CODES]
+Alt + H: Reset health to maximum.
+Alt + C: Give 100 coins.
+Alt + N: Go to the next room.
+Alt + R: Restart the current room.
+Alt + R: Restart the game.
+
 [CREDITS]
 Enemy and player hurt sounds: Voiced by Joseph Pollard
 Title screen and background music: https://ansimuz.itch.io/industrial-parallax-background/
