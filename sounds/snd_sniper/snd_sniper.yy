@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_gunshot",
+  "%Name":"snd_sniper",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.6979592,
+  "duration":3.3959374,
   "exportDir":"",
-  "name":"snd_gunshot",
+  "name":"snd_sniper",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
-  "soundFile":"snd_gunshot.mp3",
-  "volume":0.65,
+  "sampleRate":48000,
+  "soundFile":"snd_sniper.mp3",
+  "volume":0.7,
 }

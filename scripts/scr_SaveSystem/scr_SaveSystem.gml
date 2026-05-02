@@ -48,11 +48,15 @@ function load_roguelike_data() {
     var _struct = json_parse(_json);
 
     if (instance_exists(obj_controller)) {
-        // Use variable_struct_exists to check each key before applying it
-        var m = _struct.meta; // Shortcut to the meta struct
+        var m = _struct.meta; 
         
-        if (variable_struct_exists(m, "max_hp"))      obj_controller.maxHealth = m.max_hp;
-        if (variable_struct_exists(m, "hp_lvl"))      obj_controller.upgrade_max_health_level = m.hp_lvl;
+        // Load the level FIRST, then dynamically calculate the health
+        if (variable_struct_exists(m, "hp_lvl")) {
+            obj_controller.upgrade_max_health_level = m.hp_lvl;
+            obj_controller.maxHealth = 100 + (25 * m.hp_lvl); // Recalculate safely!
+        }
+        
+        // Load the rest of the stats
         if (variable_struct_exists(m, "vspd_lvl"))    obj_controller.upgrade_vspeed_level = m.vspd_lvl;
         if (variable_struct_exists(m, "hspd_lvl"))    obj_controller.upgrade_hspeed_level = m.hspd_lvl;
         if (variable_struct_exists(m, "reload_lvl"))  obj_controller.upgrade_gun_reload_time = m.reload_lvl;

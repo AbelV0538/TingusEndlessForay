@@ -41,6 +41,7 @@
     {"name":"inst_4F3790A5_1","path":"rooms/rm_F1/rm_F1.yy",},
     {"name":"inst_29B5F8F3","path":"rooms/rm_F1/rm_F1.yy",},
     {"name":"inst_7900A81C","path":"rooms/rm_F1/rm_F1.yy",},
+    {"name":"inst_203FCB54","path":"rooms/rm_F1/rm_F1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -179,6 +180,7 @@
         {"$GMRInstance":"v4","%Name":"inst_4F3790A5_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F3790A5_1","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":104.0,"y":1992.0,},
         {"$GMRInstance":"v4","%Name":"inst_29B5F8F3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29B5F8F3","objectId":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":136.0,"y":1864.0,},
         {"$GMRInstance":"v4","%Name":"inst_7900A81C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7900A81C","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":3232.0,},
+        {"$GMRInstance":"v4","%Name":"inst_203FCB54","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_203FCB54","objectId":{"name":"obj_enemy_sniper","path":"objects/obj_enemy_sniper/obj_enemy_sniper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":40.0,"y":3104.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"BackgroundTilesNew","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BackgroundTilesNew","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":204,"SerialiseWidth":22,"TileCompressedData":[
           -23,-2147483648,-20,17,-2,-2147483648,-20,17,-2,-2147483648,-20,36,-2,-2147483648,-4,8,1,10,-15,8,-2,

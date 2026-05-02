@@ -82,6 +82,7 @@
     {"id":{"name":"snd_industrial","path":"sounds/snd_industrial/snd_industrial.yy",},},
     {"id":{"name":"snd_player_hurt","path":"sounds/snd_player_hurt/snd_player_hurt.yy",},},
     {"id":{"name":"snd_player_kill","path":"sounds/snd_player_kill/snd_player_kill.yy",},},
+    {"id":{"name":"snd_sniper","path":"sounds/snd_sniper/snd_sniper.yy",},},
     {"id":{"name":"spr_boss_1_hurt","path":"sprites/spr_boss_1_hurt/spr_boss_1_hurt.yy",},},
     {"id":{"name":"spr_boss_1","path":"sprites/spr_boss_1/spr_boss_1.yy",},},
     {"id":{"name":"spr_boss_2_hurt","path":"sprites/spr_boss_2_hurt/spr_boss_2_hurt.yy",},},
