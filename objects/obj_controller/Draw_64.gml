@@ -63,3 +63,16 @@ if (room == Room_end) {
         draw_text_transformed(280, 810, ">", 2, 2, 0);
     }
 }
+
+// obj_controller -> Draw GUI End
+// Draw the entire game with the CRT effect
+shader_set(shd_crt);
+
+// Pass the resolution to the shader
+shader_set_uniform_f(u_res, display_get_gui_width(), display_get_gui_height());
+
+// Draw the application surface (the whole game)
+draw_surface_stretched(application_surface, 0, 0, display_get_gui_width(), display_get_gui_height());
+
+shader_reset();
+

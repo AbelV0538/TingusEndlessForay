@@ -1,3 +1,7 @@
+// Get the handles once to save performance
+u_res = shader_get_uniform(shd_crt, "u_resolution");
+application_surface_draw_enable(false);
+
 paused = false;
 pause_option = 0;
 

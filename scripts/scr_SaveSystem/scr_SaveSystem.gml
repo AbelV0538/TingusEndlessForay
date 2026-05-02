@@ -14,6 +14,7 @@ function save_roguelike_data() {
 
         var _save_struct = {
             meta: {
+				max_hp:     obj_controller.maxHealth,
                 hp_lvl:     obj_controller.upgrade_max_health_level,
                 vspd_lvl:   obj_controller.upgrade_vspeed_level,
                 hspd_lvl:   obj_controller.upgrade_hspeed_level,
@@ -46,16 +47,22 @@ function load_roguelike_data() {
 
     var _struct = json_parse(_json);
 
-    // Apply values back to the instance
     if (instance_exists(obj_controller)) {
-        obj_controller.upgrade_max_health_level = _struct.meta.hp_lvl;
-        obj_controller.upgrade_vspeed_level     = _struct.meta.vspd_lvl;
-        obj_controller.upgrade_hspeed_level     = _struct.meta.hspd_lvl;
-        obj_controller.upgrade_gun_reload_time  = _struct.meta.reload_lvl;
-        obj_controller.upgrade_damage_level     = _struct.meta.dmg_lvl;
+        // Use variable_struct_exists to check each key before applying it
+        var m = _struct.meta; // Shortcut to the meta struct
         
-        global.best_room = _struct.meta.best_rm;
-        global.past_runs = _struct.history;
+        if (variable_struct_exists(m, "max_hp"))      obj_controller.maxHealth = m.max_hp;
+        if (variable_struct_exists(m, "hp_lvl"))      obj_controller.upgrade_max_health_level = m.hp_lvl;
+        if (variable_struct_exists(m, "vspd_lvl"))    obj_controller.upgrade_vspeed_level = m.vspd_lvl;
+        if (variable_struct_exists(m, "hspd_lvl"))    obj_controller.upgrade_hspeed_level = m.hspd_lvl;
+        if (variable_struct_exists(m, "reload_lvl"))  obj_controller.upgrade_gun_reload_time = m.reload_lvl;
+        if (variable_struct_exists(m, "dmg_lvl"))     obj_controller.upgrade_damage_level = m.dmg_lvl;
+        if (variable_struct_exists(m, "best_rm"))     global.best_room = m.best_rm;
+        
+        // Check for history separately
+        if (variable_struct_exists(_struct, "history")) {
+            global.past_runs = _struct.history;
+        }
         
         show_debug_message("Game Loaded Successfully");
     }
